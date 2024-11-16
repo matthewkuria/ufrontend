@@ -1,0 +1,37 @@
+{
+  "teams": [
+    {
+      "name": "Stars",
+      "images": {
+        "jpg": "ulinzi-stars-kenyan-military-team.jpg"
+      },
+      "description": "Ulinzi Stars represent Kenya's Defence forces the Kenya Army, the Airforce and the Kenya Navy.It was formed in 1995 when several military sides were combined. These teams were.",
+      "benchUrl": "ulinzi-stars-technical-bench",
+      "playersUrl": "ulinzi-all-players"
+
+    },
+    {
+      "name": "Starlets",
+      "images": {
+        "jpg": "ulinzi-starlets-1.jpg"
+      },
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "benchUrl": "ulinzi-starlets-technical-bench",
+      "playersUrl": "ulinzi-all-players"
+
+    },
+    {
+      "name": "Youths",
+      "images": {
+        "jpg": "ulinzi-stars-kenyan-team.jpg"
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac ex elit. Aliquam vel mollis lorem. Maecenas quis eros at nunc posuere porta. Vivamus a tellus bibendum, porta tortor fermentum, gravida ante. In hac habitasse platea dictumst. Quisque placerat metus nibh, ac convallis nunc mollis et. Aenean vel iaculis elit. Suspendisse ut sollicitudin augue. Sed aliquet volutpat dolor non finibus. Fusce eu dapibus neque.",
+      "benchUrl": "ulinzi-youths-technical-bench",
+      "playersUrl": "ulinzi-all-players"
+
+
+    }
+    
+  ]
+  
+}

@@ -11,7 +11,7 @@ const roboto = Roboto({
 })
 
 export const metadata = {
-  title: "Ulinzi Football Club Fan Engagement System",
+  title: "Ulinzi Football Hub",
   description: "Stay connected with the club and access exclusive fan content.",
 };
 

@@ -16,7 +16,9 @@ export default function PaymentPage({ params }) {
       try {
         const token = Cookies.get('access_token');
         if (!token) {
-          router.push('/login');
+          // Redirect to login with the current page URL as the `next` query parameter
+            const currentPath = window.location.pathname;
+            router.push(`/login?next=${encodeURIComponent(currentPath)}`);
           return;
         }
 

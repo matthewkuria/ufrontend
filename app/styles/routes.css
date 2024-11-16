@@ -1,0 +1,21 @@
+/* The Destination Page */
+.destination{   
+      background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.9)), url("../../public/images/ulinzi-complex_1.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      width: auto;
+      overflow-y: scroll;
+}
+@media (min-width: 576px){
+  .destination{   
+      /* background-image: url("../assets/destination/background-destination-tablet.jpg");       */
+}
+}
+@media (min-width: 768px){
+    .destination{   
+      /* background-image: url("../assets/destination/background-destination-desktop.jpg");      */
+}
+}
+

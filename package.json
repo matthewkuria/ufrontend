@@ -28,6 +28,7 @@
     "react-qr-reader": "^3.0.0-beta-1",
     "react-social-icons": "^6.18.0",
     "react-spinners": "^0.14.1",
+    "react-tabs": "^6.0.2",
     "social-icons": "^1.0.1",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7",

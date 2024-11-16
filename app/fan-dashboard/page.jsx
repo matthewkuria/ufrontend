@@ -95,7 +95,7 @@ function handleClick() {
         <title>{userProfile.fan? userProfile.fan.full_name:"New Fan"}'s Dashboard</title>
         <meta name="description" content="Fan dashboard for personalized content." />
       </Head>
-      <main className='p-8'>
+      <main className='p-8 grid grid-cols-2'>
         <div className="flex relative justify-end text-xs">
         <div  className="">
         <h1>Welcome, {userProfile.fan ? userProfile.fan.full_name : "New Fan"}!</h1>
@@ -133,17 +133,9 @@ function handleClick() {
        }
       </div>
 
-        <section className="upcoming-matches">
-          <h2>Your Upcoming Matches</h2>
-          <div className="match-list">
-            {matches.length > 0 ? (
-              matches.map(match => (
-                <MatchCard key={match.id} match={match} />
-              ))
-            ) : (
-              <p>No upcoming matches found.</p>
-            )}
-          </div>
+        <section className="subscriptions">
+          <h2 className='text-xl font-semibold'>My Subscriptions</h2>
+          
         </section>
 
         <section className="latest-news">

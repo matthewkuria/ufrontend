@@ -11,7 +11,7 @@ const { isAuthenticated } = useAuth();
   const backgroundImages = [
   
     '/images/ulinzi-complex_1.jpg',
-    '/images/ulinzi-complex_2.jpg',
+    
    
     
     
@@ -50,7 +50,7 @@ const { isAuthenticated } = useAuth();
         
         <div className=" max-w-[350px] flex flex-col items-center justify-center bg-white rounded-lg p-1 text-xs ml-4 hover:drop-shadow-xl ">
           <div className="">
-          <Image src={clubLogo} alt="The ulinzi stars club logo" width={100} height={100} />
+          <Image src={clubLogo} alt="The ulinzi stars club logo" width={100} height={100} className="animate-pulse" />
         </div>
           <h1 className=" text-xl text-red-600 md:text-2xl font-bold">
             Ulinzi Football Hub

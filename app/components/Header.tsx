@@ -15,7 +15,8 @@ export default function Header() {
             <Socials />
             <nav className=" relative py-2 px-4 flex items-center justify-between shadow-md ">
                <Navlogo />
-                <Navlinks />                
+                <Navlinks />   
+                <Link href="/my-account">My Account</Link>
                 <HamburgerMenu />
                  <div className="hidden md:flex">                    
                     {

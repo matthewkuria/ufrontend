@@ -65,6 +65,9 @@ export default function HamburgerMenu() {
           <Link onClick={closeMenu} href="/matches" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
             Matches
           </Link>
+          <Link onClick={closeMenu} href="/membership" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
+            Membership
+          </Link>
           <Link onClick={closeMenu} href="/shop" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
             Shop
           </Link>

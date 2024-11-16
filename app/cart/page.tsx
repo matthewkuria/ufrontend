@@ -19,7 +19,9 @@ const Cart = () => {
 
         const handleConfirmOrder = () => {
             if (!isAuthenticated) {
-            router.push("/login");  // Redirect to login if not authenticated
+            // Redirect to login with the current page URL as the `next` query parameter
+            const currentPath = window.location.pathname;
+            router.push(`/login?next=${encodeURIComponent(currentPath)}`);
             } else {
             setIsModalOpen(true);    // Open the confirmation modal if authenticated
             }
