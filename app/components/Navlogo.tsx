@@ -4,7 +4,8 @@ import ulinzilogo from "../../public/images/ulinzi-logo.png"
 export default function Navlogo() {
     return (
             <div className="">
-               <Link href="/"> <Image src={ulinzilogo} alt="NCMI logo" width={100} height={100} className="w-20 h-16"/></Link>
+            <Link href="/"> <Image src={ulinzilogo} alt="NCMI logo" width={100} height={100}
+                className="w-20 h-16 object-contain animate-spinAxis" /></Link>
             </div>
     )
 }

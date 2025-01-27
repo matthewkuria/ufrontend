@@ -15,7 +15,7 @@ export default function Footer() {
                 <div className="about-us flex flex-col w-full md:w-1/4">
                     <p className="footer-title">News</p>
                     <Link href="/news">Latest News</Link>
-                    <Link href="#">Major Achievements</Link>
+                    <Link href="/special-relay">Special Relay</Link>
                     <Link href="#">Personal Stories</Link>
                     <Link href="/contact-us">Directions</Link>
                 </div>

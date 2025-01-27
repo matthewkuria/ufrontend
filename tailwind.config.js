@@ -15,6 +15,15 @@ module.exports = {
       lg: '976px',
       xl: '1440px',
     },
+      animation: {
+        spinAxis: 'spinAxis 15s linear infinite',
+    },
+    keyframes: {
+      spinAxis: {
+        '0%': { transform: 'rotateY(0deg)' },
+        '100%': { transform: 'rotateY(360deg)' },
+      },
+    },
     
     
   },

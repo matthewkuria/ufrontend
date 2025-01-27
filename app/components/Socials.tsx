@@ -10,7 +10,7 @@ export default function Socials() {
           </div>
           <div className="flex gap-3">
           <p className="">Follow Us</p>
-            <SocialIcon url="https://facebook.com" href="https://facebook.com/ncmi-ke" style={{ height: 20, width: 20 }}/>
+            <SocialIcon url="https://facebook.com" href="" style={{ height: 20, width: 20 }}/>
             <SocialIcon url="https://youtube.com" style={{ height: 20, width: 20 }}/>
             <SocialIcon url="https://twitter.com" style={{ height: 20, width: 20 }}/>
             <SocialIcon url="https://instagram.com" style={{ height: 20, width: 20 }}/>

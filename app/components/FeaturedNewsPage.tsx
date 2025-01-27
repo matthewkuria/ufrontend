@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
-export default function NewsPage() {
+export default function FeaturedNewsPage() {
   const [newsItems, setNewsItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -75,31 +75,7 @@ const formatDateTime = (dateString) => {
           </div>
         ))}
       </div>
-      <h1 className="text-3xl font-bold text-center mb-8">More News</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-        {moreNews.map((item) => (
-          <div key={item.id} className="bg-white shadow-md rounded-lg overflow-hidden">
-            <Link href={`/news/${item.id}`}>
-              <img
-                src={item.image}  // Ensure the API returns an image_url field
-                alt={item.title}
-                className="w-full h-32 object-cover cursor-pointer hover:scale-105"
-              />
-            </Link>
-            <div className="p-4">
-              <h2 className="text-xl font-semibold mb-2">{item.title}</h2>
-              <p className="text-gray-700 max-h-20 overflow-y-scroll">{item.summary}</p>
-              <p className="">{item.tags.length> 0 ? `Tags:${item.tags}` :""}</p>
-              <div className="flex justify-between items-baseline">
-                <Link href={`/news/${item.id}`}>
-                <p className="text-indigo-600 hover:underline text-xs">Read More</p>
-                </Link>
-                <p className="text-slate-500 text-xs">{formatDateTime(item.published_date)}</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+     
     </div>
   );
 }

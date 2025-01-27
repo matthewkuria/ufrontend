@@ -5,10 +5,10 @@
 .socials{
   font-size: 13px;
 }
-/* .Hero{
-  background: url(../public/images/ulinzi-starlets-1.jpg) no-repeat center center;
+.BENCH{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.6)), url(../../public/images/ulinzi-complex_1.jpg);
   background-size: cover;
-} */
+}
 .feature {
   border: 1px solid #ddd;
   padding: 1.5rem;

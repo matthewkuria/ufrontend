@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
 import { BounceLoader } from 'react-spinners';
 
 export default function MatchDetailsPage({ params }) {
@@ -29,30 +28,25 @@ export default function MatchDetailsPage({ params }) {
   return (
     <div className="match-details text-xs">
       <div className="border border-b-2">
-        <h1 className='text-2xl font-bold'>
-            {matchDetails?.home_team?.name} vs {matchDetails?.away_team?.name}
-            </h1>
-            <div className="grid  grid-cols-1 md:grid-cols-3 justify-center items-center">
-                <div className="flex flex-col items-center">
-                    <img src={matchDetails?.home_team?.logo} alt={matchDetails?.home_team?.name} className="team-logo" />
+        
+        <div className="grid  grid-cols-1 md:grid-cols-3 justify-center items-center">
+          <div className="  font-bold">
+                <p className='text-2xl'>{matchDetails?.match_date}</p>                
+            </div>
+                <div className="flex flex-col  items-center">
+            <div className="flex justify-around items-center">
+              <img src={matchDetails?.home_team?.logo} alt={matchDetails?.home_team?.name} className="team-logo" />
                     <p className="text-3xl">VS</p>
                     <img src={matchDetails?.away_team?.logo} alt={matchDetails?.away_team?.name} className="team-logo" />
+                    </div>
+                    <p className="text-red-600 font-bold text-xl">{matchDetails?.home_score} - {matchDetails?.away_score}</p>
+
                 </div>
-            <div className="  font-bold text-slate-600">
-                <p>Date: {matchDetails?.match_date}</p>
-            <p className='text-red-600 font-bold text-xl'>Scores:</p>
-                <p className="text-xl text-blue-700">{matchDetails?.home_team?.name} - {matchDetails?.away_team?.name}</p>
-                <p className="text-red-600 font-bold text-xl">{matchDetails?.home_score} - {matchDetails?.away_score}</p>
-                <p>League:{ matchDetails.league?.name? matchDetails.league.name :"Friendly Match"}</p>
-            </div>
+            
             {/* Match Highlights */}
             <div className="highlights flex flex-col items-center">
-            <h2 className='text-base font-semibold'>Match Highlights</h2>
-            <ul>
-                {matchDetails?.match_highlights?.map((highlight, index) => (
-                <li key={index} className='animate-bounce fill-mode-both text-blue-800'>{highlight.minute}': {highlight.event}</li>
-                ))}
-            </ul>
+            <h2 className='text-base font-semibold'>League</h2>
+            <p>{ matchDetails.league?.name? matchDetails.league.name :"Friendly Match"}</p>
             </div>
         </div>
             

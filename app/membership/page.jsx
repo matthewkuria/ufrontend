@@ -47,7 +47,7 @@ const [loading, setLoading] = useState(false); // For handling button state
     if (isAuthenticated) {
       try {
         const token = Cookies.get("access_token");
-        const response = await fetch("http://127.0.0.1:8000/api/memberships/", {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/memberships/`, {
           method: "POST",
           headers: {
             Authorization: `Bearer ${token}`,

@@ -14,14 +14,14 @@ const MatchCard = ({ match }) => {
           {match.home_team?.logo && (
             <img src={match.home_team.logo} alt={`${match.home_team.name} logo`} className="team-logo" />
           )}
-          <span>{match.home_team?.name || 'Home Team'}</span>
+          <span className='font-bold'>{match.home_team?.name || 'Home Team'}</span>
         </div>
         <span className="vs">vs</span>
         <div className="team">
           {match.away_team?.logo && (
-            <img src={match.away_team.logo} alt={`${match.away_team.name} logo`} className="team-logo" />
+            <img src={match.away_team.logo} alt={`${match.away_team.name} logo`} className="team-logo object-contain" />
           )}
-          <span>{match.away_team?.name || 'Away Team'}</span>
+          <span className='font-bold'>{match.away_team?.name || 'Away Team'}</span>
         </div>
       </div>
       <p className="match-date">Date: {match.match_date}</p>
@@ -55,7 +55,7 @@ const MatchCard = ({ match }) => {
         }
         .vs {
           font-weight: bold;
-          font-size: 1.2rem;
+          font-size: 3.2rem;
           color: #333;
         }
         .match-date {

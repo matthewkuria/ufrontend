@@ -12,7 +12,7 @@ export default function Players() {
   const [error, setError] = useState(null);
    // State to hold filter values 
   const [filters, setFilters] = useState({
-    team: "stars", // Default filter for team
+    team: "starlets", // Default filter for team
    
   });
 
@@ -69,9 +69,10 @@ export default function Players() {
   
   return (
     <>
-      <h1 className={`${bebas_neue.className} text-5xl text-[#392d80] font-extrabold py-2`}>TEAMS</h1>
+      <h1 className={`${bebas_neue.className} text-5xl text-red-600 font-extrabold py-2`}>TEAMS</h1>
       {/* Filter by Teams */}
-        <select
+      <select
+        value={filters.team}
         onChange={e => setFilters({ ...filters, team: e.target.value })}
         className="border border-gray-300 rounded-lg p-2 mb-4"
         >

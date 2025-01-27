@@ -5,6 +5,7 @@ import clubLogo from "../public/images/ulinzi-logo.png"
 import Registration from "./components/Registration";
 import { useAuth } from "./context/AuthContext";
 import { useEffect, useState } from "react";
+import FeaturedNewsPage from "./components/FeaturedNewsPage";
 export default function Home() {
 
 const { isAuthenticated } = useAuth();
@@ -50,7 +51,9 @@ const { isAuthenticated } = useAuth();
         
         <div className=" max-w-[350px] flex flex-col items-center justify-center bg-white rounded-lg p-1 text-xs ml-4 hover:drop-shadow-xl ">
           <div className="">
-          <Image src={clubLogo} alt="The ulinzi stars club logo" width={100} height={100} className="animate-pulse" />
+            <Image src={clubLogo} alt="The ulinzi stars club logo"
+              width={100} height={100}
+              className="object-contain animate-spinAxis" />
         </div>
           <h1 className=" text-xl text-red-600 md:text-2xl font-bold">
             Ulinzi Football Hub
@@ -59,22 +62,8 @@ const { isAuthenticated } = useAuth();
           <Link href="/signup" className="bg-blue-900 px-2 py-2 rounded-lg text-white hover:text-red-500">Join Now</Link>
         </div>
       </section>
-      <section className="flex flex-col justify-center items-center md:flex md:flex-row gap-6  mt-10 text-xs">
-          <div className="feature">
-            <p className="text-xl font-semibold">Shop</p>
-            <p>Browse and purchase official club merchandise.</p>
-            <Link href="/shop" className="hover:text-red-500">Shop Now</Link>
-          </div>
-          <div className="feature">
-            <p className="text-xl font-semibold">Matches</p>
-            <p>View match schedules, results, and standings.</p>
-            <Link href="/matches" className="hover:text-red-500">See Matches</Link>
-          </div>
-          <div className="feature">
-            <p className="text-xl font-semibold">Ulinzi Hub</p>
-            <p>Read about our story.Get to know us better.</p>
-            <Link href="/about-ulinzi" className="hover:text-red-500">About Us</Link>
-          </div>
+      <section className="">
+        <FeaturedNewsPage/>
       </section>
       
     </main>

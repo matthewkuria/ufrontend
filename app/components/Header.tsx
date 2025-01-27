@@ -15,16 +15,19 @@ export default function Header() {
             <Socials />
             <nav className=" relative py-2 px-4 flex items-center justify-between shadow-md ">
                <Navlogo />
-                <Navlinks />   
-                <Link href="/my-account">My Account</Link>
+                <Navlinks />                 
                 <HamburgerMenu />
-                 <div className="hidden md:flex">                    
+                 <div className="hidden md:flex flex-col items-center">                    
                     {
-                    isAuthenticated ? <Link href="/logout" className="py-3 px-4 border-2 font-bold text-blue-900 hover:text-red-500">Logout</Link> :<Registration />
-                     }
+                    isAuthenticated ? <Link href="/my-account" className="text-xs font-bold hover:text-red-600">My Account</Link> :<Registration />
+                    }
+                    
                 </div>  
                
             </nav>
+            <div className="h-1 bg-[#e93e22]"></div>
+            <div className="h-1 bg-[#19a4dd]"></div>
+            <div className="h-1 bg-[#392d80]"></div>
         </>
     )
 }

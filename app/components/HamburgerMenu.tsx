@@ -56,14 +56,17 @@ export default function HamburgerMenu() {
           <Link onClick={closeMenu} href="/" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
             Home
           </Link>
-          <Link onClick={closeMenu} href="/about-ulinzi" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
-            About Ulinzi
+          <Link onClick={closeMenu} href="/matches" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
+            Matches
+          </Link>
+          <Link onClick={closeMenu} href="/teams" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
+            Teams
           </Link>
           <Link onClick={closeMenu} href="/news" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
             News
           </Link>
-          <Link onClick={closeMenu} href="/matches" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
-            Matches
+          <Link onClick={closeMenu} href="/videos" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
+            Videos
           </Link>
           <Link onClick={closeMenu} href="/membership" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
             Membership
@@ -76,6 +79,8 @@ export default function HamburgerMenu() {
           </Link>
           <Link onClick={closeMenu} href="/support" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
             Donate
+          </Link><Link onClick={closeMenu} href="/special-relay" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
+            Special Relay
           </Link>
           <Link onClick={closeMenu} href="/contact-us" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
             Contact Us

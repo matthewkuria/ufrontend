@@ -1,5 +1,5 @@
 export async function generateStaticParams() {
-  const response = await fetch('http://localhost:8000/api/news/');
+  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/news/`);
   const newsItems = await response.json();
 
   return newsItems.map((item) => ({
@@ -10,7 +10,7 @@ export async function generateStaticParams() {
 
 // This function fetches the news item for the page.
 export async function getNewsItem(id) {
-  const response = await fetch(`http://localhost:8000/api/news/${id}/`, { cache: 'no-store' });
+  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/news/${id}/`, { cache: 'no-store' });
   if (!response.ok) {
     throw new Error('Failed to fetch news item');
   }
